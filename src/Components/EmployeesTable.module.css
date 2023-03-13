@@ -1,0 +1,102 @@
+.tableContainer {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 0.5rem 0;
+}
+
+.tableContainer::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background-color: #3075df;
+  border-radius: 50px;
+}
+
+.employeesTable {
+  border-collapse: collapse;
+  width: 100% !important;
+  overflow: hidden;
+}
+
+tr {
+  border-bottom: 1px solid black;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.fieldName {
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fieldName:hover > .deleteFieldBtn {
+  display: block;
+  cursor: pointer;
+}
+
+.fieldName input {
+  font-weight: bold !important;
+  background-color: transparent;
+  color: black !important;
+  font-size: 1rem !important;
+}
+
+.deleteFieldBtn {
+  width: 1.2rem;
+  top: 0;
+  right: 0;
+  display: none;
+  transition: 300ms;
+}
+
+.deleteFieldBtn:hover {
+  filter: invert(47%) sepia(54%) saturate(1453%) hue-rotate(324deg)
+    brightness(110%) contrast(109%);
+}
+
+td:nth-child(1) {
+  width: 5rem;
+}
+
+td {
+  width: 10rem;
+  overflow: hidden;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7a869f;
+}
+
+input[type="date"] {
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7a869f;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  margin-left: -10px;
+}
+
+input[type="number"] {
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7a869f;
+}
